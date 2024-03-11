@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// Arrays of first names, last names, thoughts, and reactions
 const first = [
     'Zoe',
     'Jackson',
@@ -30,7 +31,7 @@ const first = [
     'David',
     'Elijah',
     'Natalie',
-    'Scarlett',
+    'Scarlett'
 ];
 
 const last = [
@@ -63,7 +64,7 @@ const last = [
     'King',
     'Martinez',
     'Barnes',
-    'Green',
+    'Green'
 ];
 
 const thoughts = [
@@ -96,7 +97,7 @@ const thoughts = [
     'Ready for a fresh start',
     'Slaying one day at a time.',
     'Finding beauty in simplicity.',
-    'Music = therapy',
+    'Music = therapy'
 ];
 
 const reactions = [
@@ -130,17 +131,16 @@ const reactions = [
     'So true!',
     'Cute!',
     'Impressive!',
-    'OMG!',
+    'OMG!'
 ];
 
-// Get a random item given an array
+// Function to get a random item from an array
 const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-// Get random name by combining random elements from first and last arrays
+// Function to get a random name by combining random elements from first and last arrays
 const getRandomName = () => getRandomArrItem(first) + ' ' + getRandomArrItem(last);
 
-// Generate random thoughts where 'int' is number of thoughts, 'thoughtIdArray' is an array of thought ids
-// username is the user the thought is assigned to, and reactionCount specifies the number of reactions
+// Function to generate random thoughts where 'int' is the number of thoughts
 const getRandomThoughts = (int, thoughtIdArray, username, reactionCount) => {
     let results = [];
     for (let i = 0; i < int; i++) {
@@ -155,7 +155,7 @@ const getRandomThoughts = (int, thoughtIdArray, username, reactionCount) => {
     return results;
 };
 
-// Generate 'int' number of reactions to a thought
+// Function to generate 'int' number of reactions to a thought
 const getThoughtReactions = (int) => {
     const results = [];
     for (let i = 0; i < int; i++) {
