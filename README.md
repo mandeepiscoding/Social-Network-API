@@ -42,6 +42,12 @@ This API provides endpoints for managing users, thoughts, reactions, and friends
 - `/api/thoughts/:thoughtId/reactions/:reactionId`: Remove a reaction from a thought.
 - `/api/users/:userId/friends/:friendId`: Remove a friend from a user's friend list.
 
+# Screenshot
+![Social Network API](assets/ss.png)
+
+# Video Link
+[Social Network API](https://drive.google.com/file/d/1k9TPbZE9lOqIGmz3TH4q_FAKKY1Szz1f/view)
+
 ## Copyright
 
 &copy; 2024 Social Network API. All rights reserved.
